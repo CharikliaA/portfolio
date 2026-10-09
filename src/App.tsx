@@ -1,7 +1,8 @@
+import Navbar from "./components/Navbar"
 function App () {
-  return (
+  return  (
     <div>
-      <h1>Min portfolio</h1>
+      <Navbar />
     </div>
   )
 }
