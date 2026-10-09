@@ -8,6 +8,8 @@ const About = () => {
         <ul>
             <li>HTML</li>
             <li>CSS</li>
+            <li>SCSS</li>
+            <li>Vite</li>
             <li>JavaScript</li>
             <li>TypeScript</li>
             <li>React</li>
