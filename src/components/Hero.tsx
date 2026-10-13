@@ -1,12 +1,12 @@
 const Hero = () => {
   return (
-    <section id="hem">
-        <div>
+    <section id="hem" className="hero">
+        <div className="hero-text">
         <h1>Chariklia Sait</h1>
         <p>Frontendutvecklare</p>
-        <a href="#projekt">Se mina projekt</a>
+        <a href="#projekt" className="hero-button">Se mina projekt</a>
         </div>
-        <div>Bild</div>
+        <div className="hero-image">Bild</div>
     </section>
   )
 }
