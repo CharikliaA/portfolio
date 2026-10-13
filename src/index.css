@@ -176,7 +176,7 @@ body {
 }
 
 .about-text p {
-  margin: 0;
+  margin: 0 0 1rem;
   line-height: 1.6;
 }
 
