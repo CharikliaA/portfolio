@@ -6,24 +6,31 @@ const tags = ["Alla", "HTML", "CSS", "SCSS", "JavaScript", "TypeScript", "React"
 
 const Projects = () => {
     const [selectedTag, setSelectedTag] = useState("Alla")
-
-        const filteredProjects =
+    
+    const filteredProjects =
     selectedTag === "Alla"
     ? projects
     : projects.filter((project) => project.tags.includes(selectedTag))
+
   return (
-    <section id="projekt">
+    <section id="projekt" className="projects">
         <h2>Projekt</h2>
-        <div>
+        <div className="filter-buttons">
             {tags.map((tag) => (
-                <button key={tag} onClick={() => setSelectedTag(tag)}>
+                <button 
+                key={tag} 
+                className={selectedTag === tag ? "filter-button active" : "filter-button"}
+                aria-pressed={selectedTag === tag}
+                onClick={() => setSelectedTag(tag)}>
                     {tag}
                     </button>
             ))}
         </div>
-                {filteredProjects.map((project) => (
+        <div className="project-grid">
+            {filteredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
         ))}
+        </div>
     </section>
   )
 }
