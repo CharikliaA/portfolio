@@ -160,3 +160,56 @@ body {
     height: 300px;
   }
 }
+
+/* ==== ABOUT ==== */
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 1rem;
+  background-color: var(--color-surface);
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin: 0 0 1rem;
+}
+
+.about-text p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skills li {
+  padding: 0.5rem 1rem;
+  background-color: var(--color-soft);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .about {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5rem 10%;
+  }
+
+  .about-text {
+    max-width: 50%;
+  }
+
+  .skills {
+    max-width: 40%;
+  }
+}
