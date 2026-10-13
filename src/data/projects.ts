@@ -1,4 +1,13 @@
-export const projects = [
+export type Project = {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  tags: string[];
+  repoUrl: string;
+  liveUrl: string;
+};
+export const projects: Project[] = [
   {
     id: 1,
     title: "Mars Bound Marauders",

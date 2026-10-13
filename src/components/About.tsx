@@ -15,6 +15,8 @@ const About = () => {
             <li>React</li>
             <li>Git</li>
             <li>Figma</li>
+            <li>MongoDB</li>
+            <li>Node.js</li>
         </ul>
     </section>
   )
