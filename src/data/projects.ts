@@ -44,10 +44,10 @@ export const projects: Project[] = [
     id: 4,
     title: "Portfolio",
     description: "Min personliga portfolio med projektfilter",
-    image: "",
+    image: "/images/portfolio.jpg",
     tags: ["React", "TypeScript", "Vite"],
     repoUrl: "https://github.com/CharikliaA/portfolio",
-    liveUrl: "",
+    liveUrl: "https://portfolio-chariklia.vercel.app",
   },
   {
     id: 5,
