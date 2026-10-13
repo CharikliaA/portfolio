@@ -2,8 +2,7 @@ import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import About from "./components/About"
 import Contact from "./components/Contact"
-import ProjectCard from "./components/ProjectCard"
-import { projects } from "./data/projects"
+import Projects from "./components/Projects"
 
 function App () {
   return  (
@@ -11,7 +10,7 @@ function App () {
       <Navbar />
       <Hero />
       <About />
-      <ProjectCard project={projects[5]}/>
+      <Projects />
       <Contact />
     </div>
   )
