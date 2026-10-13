@@ -13,7 +13,7 @@ export const projects: Project[] = [
     title: "Mars Bound Marauders",
     description:
       "Ett escape room-spel i webbläsaren, byggt i grupp. Lös sex pussel och samla bokstäver för att öppna portalen.",
-    image: "",
+    image: "/images/mars.jpg",
     tags: ["TypeScript", "HTML", "SCSS", "Vite"],
     repoUrl: "",
     liveUrl:
@@ -24,7 +24,7 @@ export const projects: Project[] = [
     title: "Book API",
     description:
       "Fullstack-app för bokrecensioner, byggd i grupp. Jag byggde recensions-API:t och boksidan med formulär och validering.",
-    image: "",
+    image: "/images/bookapi.svg",
     tags: ["TypeScript", "MongoDB", "Node.js"],
     repoUrl: "https://github.com/RasmusFranssonHub/api-book-group",
     liveUrl: "",
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     title: "BUBS Passions-Punch",
     description:
       "Kampanjsida för en ny godissmak, designad i Figma och byggd i grupp. Responsiv layout med meny, cookie-ruta och kontaktformulär.",
-    image: "",
+    image: "/images/bubs.jpg",
     tags: ["HTML", "CSS"],
     repoUrl: "",
     liveUrl:
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     title: "Väderapp",
     description:
       "Väderapp som hämtar aktuellt väder för en vald stad från ett öppet API. Visar temperatur, väderikon och prognos.",
-    image: "",
+    image: "/images/weather.svg",
     tags: ["JavaScript", "HTML", "CSS"],
     repoUrl: "",
     liveUrl: "",
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     title: "Att göra-lista",
     description:
       "Att göra-lista där man kan lägga till, bocka av och ta bort uppgifter. Uppgifterna sparas i webbläsaren.",
-    image: "",
+    image: "/images/todo.svg",
     tags: ["React", "TypeScript"],
     repoUrl: "",
     liveUrl: "",

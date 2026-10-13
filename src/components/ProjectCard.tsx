@@ -7,7 +7,11 @@ type ProjectCardProps = {
 const ProjectCard = ({ project }: ProjectCardProps) => {
     return (
         <article className="project-card">
-            <div className="project-image">Bild</div>
+            {project.image ? (
+                <img src={project.image} alt={project.title} className="project-image" />
+            ) : (
+                <div className="project-image">Bild</div>
+            )}
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <ul className="project-tags">

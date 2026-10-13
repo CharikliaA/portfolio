@@ -268,12 +268,14 @@ body {
 }
 
 .project-image {
+  width: 100%;
   height: 160px;
   border-radius: 0.5rem;
   background-color: var(--color-soft);
   display: flex;
   align-items: center;
   justify-content: center;
+  object-fit: cover;
 }
 
 .project-card h3,
