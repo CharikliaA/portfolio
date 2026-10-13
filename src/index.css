@@ -70,3 +70,14 @@ body {
 .nav-links a:hover {
   color: #ffafcc;
 }
+
+@media (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+}
