@@ -100,12 +100,6 @@ body {
   }
 }
 
-@media (min-width: 1024px) {
-  .nav-links {
-    gap: 4rem;
-  }
-}
-
 /* ==== HERO ==== */
 .hero {
   display: flex;
@@ -145,10 +139,6 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: var(--color-soft);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   object-fit: cover;
   object-position: center 20%;
 }
