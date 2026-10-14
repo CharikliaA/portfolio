@@ -1,5 +1,5 @@
-import ProjectCard from "./ProjectCard";
-import { projects } from "../data/projects";
+import ProjectCard from "../ui/ProjectCard";
+import { projects } from "../../data/projects";
 import { useState } from "react";
 
 const tags = [
