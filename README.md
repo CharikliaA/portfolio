@@ -1,75 +1,38 @@
-# React + TypeScript + Vite
+# Portfolio - Chariklia Sait
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Min personliga portfolio, byggd som en React single page application med TypeScript och Vite. Här presenterar jag mig själv, mina kompetenser och mina projekt. Projekten kan filtreras på teknik, och sidan fungerar på alla skärmstorlekar, från mobil till desktop. 
 
-Currently, two official plugins are available:
+🔗 **Live:** https://portfolio-chariklia.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🎨 **Figma:** https://www.figma.com/design/YUwl2apshDPO8fjG6CfCvj/Portfolio?node-id=0-1&t=BFx4uwTvA8t9EORg-1
 
-## React Compiler
+## Tech stack 
+- React
+- TypeScript
+- Vite
+- CSS
+- Figma 
+- Git och GitHub
+- Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Funktioner
+- Responsiv design från 360px upp till desktop
+- Projektfilter med `useState`, där man väljer en teknik-tagg i taget eller visar alla projekt
+- Den filtrerade listan räknas fram vid rendering
+- Mobilmeny (hamburgarmeny) med `useState`
+- Projektdata i en separat fil (`data/projects.ts`), renderad med `.map()` och `key`
+- Återanvändbara komponenter med props
+- Transitions på knappar och länkar
 
-## Expanding the ESLint configuration
+## Kör projektet lokalt
+1. Klona repot: git clone https://github.com/CharikliaA/portfolio.git
+2. Gå in i mappen: cd portfolio
+3. Installera beroenden: npm install
+4. Starta utvecklingsservern: npm run dev
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+## Ändringar från Figma-skissen
+- **Färger:** Skissen gjordes i gråskala. Under arbetet valde jag en ljus blå färgpalett med rosa accentfärg.
+- **Kompetenser:** Jag lade till SCSS, Vite, MongoDB och Node.js, eftersom jag har använt dem i mina projekt.
+- **Filterknappar:** Fler filterknappar än i skissen, så att alla tekniktaggar i projekten går att filtrera på.
+- **Projektkort:** Fick pillerformade länkar för Repo och Live, för att matcha resten av designen.
+- **Hero-bilden:** Platshållare byttes mot ett foto av mig. 
