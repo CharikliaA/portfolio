@@ -87,6 +87,14 @@ body {
     gap: 4rem;
   }
 
+  .nav-links.open {
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    border: none;
+    gap: 4rem;
+  }
+
   .navbar {
     padding: 1rem 10%;
   }
