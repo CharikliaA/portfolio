@@ -6,7 +6,7 @@ const Hero = () => {
         <p>Frontendutvecklare</p>
         <a href="#projekt" className="hero-button">Se mina projekt</a>
         </div>
-        <div className="hero-image">Bild</div>
+        <img src="/images/me.jpg" alt="Chariklia Sait" className="hero-image" />
     </section>
   )
 }

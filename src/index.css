@@ -141,6 +141,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  object-fit: cover;
+  object-position: center 20%;
 }
 
 @media (min-width: 768px) {
