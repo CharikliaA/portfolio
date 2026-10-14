@@ -8,7 +8,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
     return (
         <article className="project-card">
             {project.image ? (
-                <img src={project.image} alt={project.title} className="project-image" />
+                <img src={project.image} alt={project.title} className="project-image" loading="lazy"/>
             ) : (
                 <div className="project-image">Bild</div>
             )}
